@@ -1,0 +1,92 @@
+.productMenu {
+  justify-content: space-around;
+}
+.productMenu .productMenuItem {
+  flex: 1;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+}
+.productMenu .productMenuItem.active a {
+  border-bottom: 8px solid var(--primary-color);
+}
+.productMenu .productMenuItem a {
+  width: 100%;
+  display: block;
+  color: #000000;
+  font-size: 32px;
+  line-height: 48px;
+  padding: 24px 0;
+  font-weight: bold;
+}
+.productMenu .productMenuItem:hover a {
+  border-bottom: 8px solid var(--primary-color);
+}
+
+.productArea h2 {
+  font-size: 32px;
+  text-align: center;
+  line-height: 63px;
+}
+.productList {
+  margin-top: 24px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.productList .productListItem {
+  width: calc(25% - 18px);
+}
+.productInfo {
+  justify-content: space-between;
+}
+.productInfo p {
+  line-height: 36px;
+}
+.productInfo .productPrice {
+  color: var(--primary-color);
+}
+.productColorList {
+  flex-direction: row;
+  gap: 8px;
+}
+.productColorList .productColorItem {
+  width: 24px;
+  height: 24px;
+}
+.productColorList .productColorItem:nth-child(1) {
+  background-color: #5f3e2d;
+}
+.productColorList .productColorItem:nth-child(2) {
+  background-color: #b75929;
+}
+.pagination {
+  justify-content: center;
+}
+.pagination .paginationItem {
+  border: 1px solid #555555;
+  padding: 12px 16px;
+}
+.pagination .paginationItem a {
+  font-size: 18px;
+  color: #555555;
+}
+.pagination .pageActive {
+  background-color: #000000;
+  color: #ffffff;
+}
+.pagination .pageActive a {
+  color: #ffffff;
+}
+
+.pagination .next {
+  background-color: #f2f2f2;
+}
+.productSunglass .productList .productListItem {
+  width: calc(33% - 18px);
+}
+.mdBanner {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 576px) {
+}

@@ -1,4 +1,91 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+footer {
+  background-color: var(--primary-color);
+}
+.menu {
+  padding-top: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .nav {
+  gap: 48px;
+}
+.menu .nav a {
+  color: var(--third-color);
+}
+.socialLink {
+  gap: 32px;
+}
+.socialLink a img {
+  max-width: 48px;
+  height: 48px;
+}
+.divider {
+  border: 1px solid var(--third-color);
+  margin: 32px 0;
+}
+.contactInfo .contactInfoItem span,
+.contactInfo .contactInfoItem a {
+  color: var(--third-color);
+  font-size: 36px;
+  text-decoration: none;
+  line-height: 54px;
+}
+.contactInfoItem span {
+  vertical-align: middle;
+  font-size: 36px;
+  margin-right: 22px;
+  margin-bottom: 8px;
+}
+
+.copyright {
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+.copyright p {
+  color: var(--third-color);
+}
+.copyright ul {
+  gap: 32px;
+}
+.copyright a {
+  color: var(--third-color);
+  font-size: 14px;
+}
+.navbar .navbarItem:hover a,
+.menu .nav li:hover a,
+.copyright ul li:hover a {
+  color: #b75929;
+  transition: 0.5s;
+  /* margin: 25px 32px; */
+}
+
+.mobileFooter {
+  display: none;
+}
+.mobileFooter .contactInfo .contactInfoItem a {
+  font-size: 16px;
+  line-height: 24px;
+}
+.mobileFooter .contactInfo .contactInfoItem span {
+  font-size: 18px;
+  margin-right: 11px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.mobileFooter .menu {
+  padding-top: 24px;
+  align-items: baseline;
+}
+.mobileFooter .socialLink a img {
+  width: 24px;
+  height: 24px;
+}
+.mobileFooter .copyright {
+  flex-direction: column;
+}
+.mobileFooter .copyright .serve {
+  flex-direction: column;
+  padding-top: 8px;
+  gap: 8px;
 }
