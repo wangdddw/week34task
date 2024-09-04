@@ -116,6 +116,12 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .lgBanner {
+    display: none;
+  }
+  .mdBanner {
+    display: flex;
+  }
   .productMenu {
     .productMenuItem {
       a {
