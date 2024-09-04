@@ -24,11 +24,11 @@
     <%- include('./layout/header'); -%>
 
     <main class="index">
-      <section class="banner">
-        <div class="container">
-          <div class="bannerText">
+      <section class="banner d-flex">
+        <div class="container d-flex">
+          <div class="bannerText d-flex">
             <p class="bannerSubTitle">Promise-Desert 2020 早春系列</p>
-            <h1 class="title fz-64">看得清，才能看得遠</h1>
+            <h1 class="title">看得清，才能看得遠</h1>
             <a href="#" class="bannerBtn">立即購買</a>
           </div>
         </div>
@@ -109,7 +109,7 @@
               <div class="customListItemText">
                 <p>Jessy</p>
                 <p>眼鏡品質優良，下次還會想來這邊購買！</p>
-                <span>2021/06/20</span>
+                <time>2021/06/20</time>
               </div>
             </li>
             <li class="customListItem">
@@ -117,7 +117,7 @@
               <div class="customListItemText">
                 <p>凱倫</p>
                 <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
-                <span>2021/04/18</span>
+                <time>2021/04/18</time>
               </div>
             </li>
             <li class="customListItem">
@@ -127,7 +127,7 @@
                 <p>
                   謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
                 </p>
-                <span>2020/12/25</span>
+                <time>2020/12/25</time>
               </div>
             </li>
             <li class="customListItem">
@@ -135,7 +135,7 @@
               <div class="customListItemText">
                 <p>Kyuan</p>
                 <p>服務很好，品質沒有任何問題，非常喜歡。</p>
-                <span>2020/10/31</span>
+                <time>2020/10/31</time>
               </div>
             </li>
           </ul>
@@ -152,9 +152,9 @@
               <label for="name">姓名</label>
               <input type="text" id="name" placeholder="陳小明" />
               <label for="phone">連絡電話</label>
-              <input type="text" id="phone" placeholder="0912-345-678" />
+              <input type="tel" id="phone" placeholder="0912-345-678" />
               <label for="email">電子郵件</label>
-              <input type="text" id="email" placeholder="example@email.com" />
+              <input type="email" id="email" placeholder="example@email.com" />
               <label for="text">意見反應</label>
               <textarea
                 id="text"
@@ -163,7 +163,12 @@
               ></textarea>
 
               <label for="agree">
-                <input type="checkbox" name="agree" id="" class="agreeCheck" />
+                <input
+                  type="checkbox"
+                  name="agree"
+                  id="agree"
+                  class="agreeCheck"
+                />
                 <span
                   >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span
                 >
